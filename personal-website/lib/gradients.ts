@@ -34,7 +34,7 @@ const useGradient = (gradientValue?: string) => {
 
   useEffect(() => {
     setGradient(gradients[theme][gradientValue!]) // ensure that the gradient corresponds to the current theme
-  }, [theme])
+  }, [theme, gradientValue])
 
 
   return [gradient, theme]

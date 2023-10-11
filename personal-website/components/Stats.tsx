@@ -36,7 +36,7 @@ function Stats() {
                 <ul className='w-[70%] list-disc max-h-[70%]'>
                   <li className='w-fit'>3 years</li>
                   <li className=''>
-                    I've used JavaScript in all my personal projects since I started
+                    I&apos;ve used JavaScript in all my personal projects since I started
                     coding - a little over 3 years ago (April 04, 2020).
                   </li>              
                 </ul>
@@ -62,7 +62,7 @@ function Stats() {
                 <ul className='w-[70%] list-disc max-h-[70%]'>
                   <li className='w-fit'>3 years</li>
                   <li className=''>
-                    My oldest friend. Had my introduction to coding using Python. I've used the language
+                    My oldest friend. Had my introduction to coding using Python. I&apos;ve used the language
                     extensively since then.
                   </li>
                 </ul>
@@ -88,7 +88,7 @@ function Stats() {
               <ul className='w-[70%] list-disc max-h-[70%]'>
                 <li className='w-fit'>2 years</li>
                 <li className=''>
-                  My preferred LeetCode language, and also the language I'm learning
+                  My preferred LeetCode language, and also the language I&apos;m learning
                   at university.
                 </li>
               </ul>
@@ -235,7 +235,7 @@ function Stats() {
                 <ul className='w-[70%] list-disc max-h-[70%]'>
                   <li className='w-fit'>{'< 1 year'}</li>
                   <li className=''>
-                    Figured I'd start learning it as well. I'm using it in this
+                    Figured I&apos;d start learning it as well. I&apos;m using it in this
                     website too.
                   </li>
                 </ul>
