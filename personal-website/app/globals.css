@@ -2,26 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.bubble, .light-bubble {
+  transition: 0.35s font-weight,
+  0.35s color;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.bubble:hover {
+  font-weight: 900;
+  color: rgb(238, 242, 255);
+  cursor: default;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+.light-bubble:hover {
+  font-weight: 900;
+  color: rgb(46, 50, 52);
+  cursor: default;
+}
+
+#skills-container > div {
+  background-color: transparent;
+  transition: all .2s ease-in-out;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid gray;
+}
+
+#skills-container > div:hover {
+  cursor: pointer;
+  z-index: 10;
+  border: none;
+}
+
+#contacts-container a:hover {
+  transform: scale(.85);
+  transition: 0.2s all ease-in-out
+}
+
+#contacts-container ul {
+  list-style-type: disc;
 }

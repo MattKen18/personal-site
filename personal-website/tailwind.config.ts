@@ -5,16 +5,32 @@ const config: Config = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './lib/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        'dark-gray': '#232323',
+        'dark-blue': '#012B31',
+        'highlight-red': '#E31C3E',
+        'highlight-yellow': '#E7BA18',
+        'green-bg': {
+          900: '#051A0E'
+        },
+        'light-text': '#C6CDD1',
+        'dark-text': '#232323',
       },
-    },
+      keyframes: {
+        cursor: {
+          '50%': { opacity: '0' },
+        }
+      },
+      animation: {
+        cursor: 'cursor 1.1s infinite step-start'
+      }
+    }
   },
+  darkMode: 'class',
   plugins: [],
 }
 export default config
