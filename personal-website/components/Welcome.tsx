@@ -29,7 +29,7 @@ function Welcome() {
             display: 'inline-block',
             fontSize: '',
           }}
-          className='text-3xl after:text-3xl after:content-["\_"] after:text-black/60 dark:after:text-light-text after:animate-cursor'
+          className='text-lg xl:text-3xl text-center after:text-3xl after:content-["\_"] after:text-black/60 dark:after:text-light-text after:animate-cursor'
         />
       </motion.div>
     </div>

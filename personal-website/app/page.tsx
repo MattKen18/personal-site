@@ -8,7 +8,7 @@ import { ArrowDownIcon } from "@heroicons/react/20/solid";
  export default function Home() {
   return (
     <main className=''>
-      <div className={`snap-center w-full flex flex-col items-center justify-center`}>
+      <div className={`w-full flex flex-col items-center justify-center`}>
         <div className="flex flex-col justify-center  items-center h-screen">
           <SectionHeading gradientValue='red-blue-purple' font='fira'>
             <Welcome />
@@ -18,10 +18,10 @@ import { ArrowDownIcon } from "@heroicons/react/20/solid";
           <ArrowDownIcon className="w-6 animate-pulse" />
         </div>
       </div>
-      <div className="snap-center h-screen flex flex-col items-center justify-center">
+      <div className="h-screen flex flex-col items-center justify-center">
         <About />
       </div>
-      <div className="snap-center h-screen flex items-center justify-center">
+      <div className="h-screen flex items-center justify-center">
         <Stats />
       </div>
     </main>
