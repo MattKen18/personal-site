@@ -59,7 +59,7 @@ function Header() {
       <div className='relative flex flex-col py-4 backdrop-blur-lg items-center md:flex-row font-bold md:text-2xl'>
         <div className='fixed left-2 top-2 h-full'>
           <button 
-          className='absolute -left-3 top-1 md:hidden p-1'
+          className='absolute left-1 top-1 md:hidden p-1'
           onClick={toggleHeader}
           >
             <Bars3Icon className='dark:text-white text-gray-900 h-6 w-6' />

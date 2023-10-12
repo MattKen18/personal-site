@@ -7,7 +7,7 @@ import { ArrowDownIcon } from "@heroicons/react/20/solid";
 
  export default function Home() {
   return (
-    <main className=''>
+    <main className='p-10'>
       <div className={`snap-center w-full flex flex-col items-center justify-center`}>
         <div className="flex flex-col justify-center  items-center h-screen">
           <SectionHeading gradientValue='red-blue-purple' font='fira'>

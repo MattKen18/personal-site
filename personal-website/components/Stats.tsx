@@ -11,8 +11,8 @@ import SkillLevel from './SkillLevel'
 function Stats() {
 
   return (
-    <motion.div className='w-full h-full flex flex-col lg:flex-row lg:gap-14 items-center justify-center'
-      animate={{
+    <motion.div className='w-full h-[80%] lg:h-full flex flex-col lg:flex-row lg:gap-14 items-center justify-center'
+      initial={{
         scale: 0,
       }}
       whileInView={{ 
@@ -26,7 +26,7 @@ function Stats() {
           <p className='break-words w-30'>Skills & Tools</p>
         </SectionHeading>
       </div>
-      <div className='flex flex-col space-y-8 mt-4 lg:mt-20  items-center h-[75%] w-[70%] md:w-[80%] xl:w-[70%] 2xl:w-[60%]'>
+      <div className='flex flex-col space-y-4 mt-4 lg:mt-20  items-center h-[75%] w-[70%] md:w-[80%] xl:w-[70%] 2xl:w-[60%]'>
         <div id="skills-container" className='dark:text-white w-full h-full grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-4 lg:gap-8 text-xs xl:text-lg 2xl:text-xl'>
           <div className='relative group overflow-hidden flex flex-col -space-y-2 lg:space-y-2 items-center justify-center rounded-lg p-2 font-bold hover:cursor-default hover:scale-110 row-span-2'>
             <div className='flex items-center justify-center absolute overfow-hidden top-0 left-0 w-0 h-full -z-10 group-hover:w-full bg-yellow-500 group-hover:z-10 transition-all duration-200'>

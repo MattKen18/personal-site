@@ -19,7 +19,7 @@ function ThemeContext({ children } : {children: ReactNode}) {
     <div className={`${mode}`}>
       <div className={` ${mode === 'light' ? 'bg-gradient-to-b from-rose-100 to-teal-100'
         : 'dark:text-light-text bg-gradient-to-b from-slate-900 via-gray-700 to-gray-600'} 
-        relative   `
+        relative`
         }>
         <div className='absolute w-screen h-fit top-0'>
 

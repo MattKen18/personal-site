@@ -11,7 +11,7 @@ const aboutText : {
   0: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula neque eu dui pelle',
   1: 'Ntesque, non scelerisque tortor semper. Fusce laoreet purus sit amet quam malesuada, at sodales.',
   2: 'Libero iaculis. Nullam eu odio eget dolor laoreet posuere. Curabitur ullamcorper nibh vel justo.', 
-  3: 'Bibendum, non interdum metus bibendum. Quisque aliquam mi in lectus suscipit, sed cursus purus feugiat. Libero iaculis. Nullam eu odio eget dolor laoreet posuere. Curabitur ullamcorper nibh vel justo.',
+  // 3: 'Bibendum, non interdum metus bibendum. Quisque aliquam mi in lectus suscipit, sed cursus purus feugiat. Libero iaculis. Nullam eu odio eget dolor laoreet posuere. Curabitur ullamcorper nibh vel justo.',
 }
 
 
@@ -19,7 +19,7 @@ function Intro() {
   
   return (
     <motion.div
-      className='flex flex-col gap-20 items-center justify-center p-4 rounded-xl w-[80%] md:w-[70%] lg:w-[60%]'
+      className='flex flex-col gap-20 items-center justify-center p-4 rounded-xl w-[80%] h-[80%] lg:h-full md:w-[70%] lg:w-[60%]'
       animate={{
         opacity: 0,
         scale: 0,
@@ -37,7 +37,7 @@ function Intro() {
             height={500}
             alt='profile image'
             unoptimized
-            className='object-cover w-full h-full'
+            className='object-contain w-full h-full'
             priority
           />
         </div>
@@ -53,7 +53,7 @@ function Intro() {
                   className='hover:translate-x-2 dark:hover:text-white dark:hover:border-gray-200 hover:border-black hover:cursor-default transition-all duration-200 rounded-lg border-[1px] dark:border-gray-200/10'
                 >
                   <p 
-                  className='text-xs 2xl:text-lg max-w-20 p-4 font-light tracking-widest'>
+                  className='text-xs 2xl:text-lg max-w-20 p-2 lg:p-4 font-light tracking-widest'>
                     {aboutText[key]}
                   </p>
                 </div>
