@@ -13,8 +13,8 @@ function ContactBtn() {
   }
 
   return (
-    <div className='transition-all p-1 duration-200 flex flex-col items-center justify-center rounded-full'>
-      <div id='contacts-container' className={`flex flex-col gap-4 overflow-hidden w-10 ${contactsOpen ? 'flex-1' : 'h-0'}`}>
+    <div className='p-1 flex flex-col items-center justify-center rounded-full'>
+      <div id='contacts-container' className={`flex flex-col gap-4 overflow-hidden w-6 md:w-10 ${contactsOpen ? 'h-full' : 'h-0'}`}>
         <Link
           href={'https://github.com/MattKen18'}
           target='_blank'
@@ -22,8 +22,8 @@ function ContactBtn() {
           >
           <Image 
             src='/logos/github.png'
-            width={60}
-            height={60}
+            width={40}
+            height={40}
             alt="github logo"
             className=''
           />
@@ -36,8 +36,8 @@ function ContactBtn() {
         >
           <Image 
             src='/logos/linkedin.png'
-            width={60}
-            height={60}
+            width={40}
+            height={40}
             alt="linkedin logo"
           />
         </Link>
@@ -49,8 +49,8 @@ function ContactBtn() {
         >
           <Image 
             src='/logos/gmail.png'
-            width={60}
-            height={60}
+            width={40}
+            height={40}
             alt="email logo"
 
           />
@@ -60,7 +60,7 @@ function ContactBtn() {
       <button 
       onClick={toggleContactsOpen}
       className='mt-4'>
-        <PlusCircleIcon className={`w-12 h-12 ${contactsOpen && 'rotate-180 text-slate-800 dark:bg-blue-400 dark:rounded-full'} transition-all duration-200`}/>
+        <PlusCircleIcon className={`w-6 md:w-10 ${contactsOpen && 'rotate-180 text-slate-800 dark:bg-blue-400 dark:rounded-full'} transition-all duration-200`}/>
       </button>
     </div>
   )
