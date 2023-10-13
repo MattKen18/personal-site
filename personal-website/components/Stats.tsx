@@ -44,15 +44,19 @@ function Stats() {
 
             <span className='absolute bottom-2 right-2'>🙂</span>
             </div>
-            <span>
-              JavaScript
-            </span>
-            <Image
-              src={'/logos/javascript.webp'}
-              width={100}
-              height={100}
-              alt='javascript logo'
-            />
+            <div className='flex flex-col gap-1 md:gap-2 items-center justify-center'>
+              <span>
+                JavaScript
+              </span>
+              <Image
+                src={'/logos/javascript.webp'}
+                width={10}
+                height={10}
+                alt='javascript logo'
+                unoptimized
+                className='w-10 md:w-20'
+              />
+            </div>
           </div>
           <div className='relative group overflow-hidden flex items-center flex-col lg:flex-row justify-center rounded-lg p-2 font-bold hover:cursor-default hover:scale-110 '>
             <div className='flex items-center justify-center absolute overfow-hidden bottom-0 left-0 w-full h-0 -z-10 group-hover:h-full bg-blue-800 group-hover:z-10 transition-all duration-200'>
@@ -70,15 +74,19 @@ function Stats() {
 
               <span className='absolute bottom-2 right-2'>👊</span>
             </div>
-            <span>
-              Python
-            </span>
-            <Image
-              src={'/logos/python.svg.png'}
-              width={40}
-              height={40}
-              alt='python logo'
-            />
+            <div className='flex flex-col md:flex-row gap-1 md:gap-2 items-center justify-center'>
+              <span>
+                Python
+              </span>
+              <Image
+                src={'/logos/python.svg.png'}
+                width={10}
+                height={10}
+                alt='python logo'
+                unoptimized
+                className='w-6 md:w-8'
+              />
+            </div>
           </div>
           <div className='relative group overflow-hidden flex items-center flex-col lg:flex-row justify-center rounded-lg p-2 font-bold hover:cursor-default hover:scale-110 '>
             <div className='flex items-center justify-center absolute overfow-hidden top-0 left-0 w-full h-0 -z-10 group-hover:h-full bg-orange-600 group-hover:z-10 transition-all duration-200'>
@@ -96,15 +104,19 @@ function Stats() {
 
             <span className='absolute bottom-2 right-2'>🤓</span>
             </div>
-            <span>
-              Java
-            </span>
-            <Image
-              src={'/logos/java.svg.png'}
-              width={40}
-              height={40}
-              alt='java logo'
-            />
+            <div className='flex flex-col md:flex-row gap-1 md:gap-2 items-center justify-center'>
+              <span>
+                Java
+              </span>
+              <Image
+                src={'/logos/java.svg.png'}
+                width={10}
+                height={10}
+                unoptimized
+                alt='java logo'
+                className='w-6 md:w-8'
+              />
+            </div>
           </div>
           <div className='relative group overflow-hidden flex items-center flex-col lg:flex-row justify-center rounded-lg p-2 font-bold hover:cursor-default hover:scale-110 sm:col-span-2'>
             <div className='flex items-center justify-center absolute overfow-hidden top-0 right-0 w-0 h-full -z-10 group-hover:w-full bg-sky-400 group-hover:z-10 transition-all duration-200'>
@@ -113,23 +125,26 @@ function Stats() {
                 <ul className='w-[70%] list-disc max-h-[70%]'>
                   <li className='w-fit'>2 years</li>
                   <li className=''>
-                    My preferred library for doing web development.
-                    A breath of fresh air coming from Django. All my most
-                    recent websites are built with React.
+                    My preferred library for doing web development. All my recent
+                    websites are built with React.
                   </li>
                 </ul>
               </div>
             <span className='absolute bottom-2 right-2'>😘</span>
             </div>
-            <span>
-              ReactJs | ReactNative
-            </span>
-            <Image
-              src={'/logos/react.svg.png'}
-              width={40}
-              height={40}
-              alt='react logo'
-            />
+            <div className='flex flex-col md:flex-row gap-1 md:gap-2 items-center justify-center'>
+              <span>
+                ReactJs|ReactNative
+              </span>
+              <Image
+                src={'/logos/react.svg.png'}
+                width={10}
+                height={10}
+                alt='react logo'
+                unoptimized
+                className='w-6 md:w-8'
+              />
+            </div>
           </div>
           <div className='relative group overflow-hidden flex items-center flex-col lg:flex-row justify-center rounded-lg p-2 font-bold hover:cursor-default hover:scale-110'>
             <div className='flex items-center justify-center absolute overfow-hidden bottom-0 left-0 w-full h-0 -z-10 group-hover:h-full bg-gray-800 group-hover:z-10 transition-all duration-200'>
@@ -143,17 +158,21 @@ function Stats() {
                   </li>
                 </ul>
               </div>
-            <span className='absolute bottom-2 right-2'>🤯</span>
+              <span className='absolute bottom-2 right-2'>🤯</span>
             </div>
-            <span>
-              NextJs
-            </span>
-            <Image
-              src={'/logos/nextjs.png'}
-              width={40}
-              height={40}
-              alt='nextjs logo'
-            />
+            <div className='flex flex-col md:flex-row gap-1 md:gap-2 items-center justify-center'>
+              <span>
+                NextJs
+              </span>
+                <Image
+                  src={'/logos/nextjs.png'}
+                  width={10}
+                  height={10}
+                  alt='nextjs logo'
+                  unoptimized
+                  className='w-6 md:w-8'
+                />
+            </div>
           </div>
           <div className='relative group overflow-hidden flex items-center flex-col lg:flex-row justify-center rounded-lg p-2 font-bold hover:cursor-default hover:scale-110'>
             <div className='flex items-center justify-center absolute overfow-hidden bottom-0 left-0 w-full h-0 -z-10 group-hover:h-full bg-sky-800 group-hover:z-10 transition-all duration-200'>
@@ -168,15 +187,19 @@ function Stats() {
               </div>
               <span className='absolute bottom-2 right-2'>🥳</span>
             </div>
-            <span>
-              TailwindCSS
-            </span>
-            <Image
-              src={'/logos/tailwind.png'}
-              width={40}
-              height={40}
-              alt='tailwindcss logo'
-            />
+            <div className='flex flex-col md:flex-row gap-1 md:gap-2 items-center justify-center'>
+              <span>
+                TailwindCSS
+              </span>
+              <Image
+                src={'/logos/tailwind.png'}
+                width={10}
+                height={10}
+                alt='tailwind logo'
+                unoptimized
+                className='w-6 md:w-8'
+              />
+            </div>
           </div>
           <div className='relative group overflow-hidden flex items-center flex-col lg:flex-row justify-center rounded-lg p-2 font-bold hover:cursor-default hover:scale-110'>
             <div className='flex items-center justify-center absolute overfow-hidden bottom-0 left-0 w-full h-0 -z-10 group-hover:h-full bg-amber-500 group-hover:z-10 transition-all duration-200'>
@@ -192,15 +215,19 @@ function Stats() {
               </div>
             <span className='absolute bottom-2 right-2'>😁</span>
             </div>
-            <span>
-              Firebase
-            </span>
-            <Image
-              src={'/logos/firebase.png'}
-              width={40}
-              height={40}
-              alt='firebase logo'
-            />        
+            <div className='flex flex-col md:flex-row gap-1 md:gap-2 items-center justify-center'>
+              <span>
+                Firebase
+              </span>
+              <Image
+                src={'/logos/firebase.png'}
+                width={10}
+                height={10}
+                alt='firebase logo'
+                unoptimized
+                className='w-6 md:w-8'
+              />
+            </div>       
           </div>
           <div className='relative group overflow-hidden flex items-center flex-col lg:flex-row justify-center rounded-lg p-2 font-bold hover:cursor-default hover:scale-110 lg:col-span-2'>
             <div className='flex items-center justify-center absolute overfow-hidden bottom-0 left-0 w-0 h-full -z-10 group-hover:w-full bg-indigo-500 group-hover:z-10 transition-all duration-200'>
@@ -209,24 +236,27 @@ function Stats() {
                 <ul className='w-[70%] list-disc max-h-[70%]'>
                   <li className='w-fit'>{'< 1 year'}</li>
                   <li className=''>
-                    My arch nemesis, the primary language I used during my 
-                    time at Google (summer 2023). Loved learning the language
-                    but was not a fan of the headaches. Makes me appreciate Python
+                    The primary language I used during my 
+                    time at Google (summer 2023). Makes me appreciate Python
                     a little more.
                   </li>
                 </ul>
               </div>
             <span className='absolute bottom-2 right-2'>🤬</span>
             </div>
-            <span>
-              C++
-            </span>
-            <Image
-              src={'/logos/c++.png'}
-              width={40}
-              height={40}
-              alt='c++ logo'
-            />        
+            <div className='flex flex-col md:flex-row gap-1 md:gap-2 items-center justify-center'>
+              <span>
+                C++
+              </span>
+              <Image
+                src={'/logos/c++.png'}
+                width={10}
+                height={10}
+                alt='c plus plus logo'
+                unoptimized
+                className='w-6 md:w-8'
+              />
+            </div>      
           </div>
           <div className='relative group overflow-hidden flex items-center flex-col lg:flex-row justify-center rounded-lg p-2 font-bold hover:cursor-default hover:scale-110'>
             <div className='flex items-center justify-center absolute overfow-hidden top-0 left-0 w-full h-0 -z-10 group-hover:h-full bg-cyan-500 group-hover:z-10 transition-all duration-200'>
@@ -242,15 +272,19 @@ function Stats() {
               </div>
               <span className='absolute bottom-2 right-2'>🫡</span>
             </div>
-            <span>
-              TypeScript
-            </span>
-            <Image
-              src={'/logos/typescript.webp'}
-              width={60}
-              height={60}
-              alt='typescript logo'
-            />        
+            <div className='flex flex-col md:flex-row gap-1 md:gap-2 items-center justify-center'>
+              <span>
+                TypeScript
+              </span>
+              <Image
+                src={'/logos/typescript.webp'}
+                width={10}
+                height={10}
+                alt='typescript logo'
+                unoptimized
+                className='w-8 md:w-10'
+              />
+            </div>      
           </div>
         </div>
         <Link href='/projects' className='w-fit hover:opacity-75 rounded-full bg-red-500 text-white px-4 py-2 font-bold'>

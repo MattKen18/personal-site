@@ -14,7 +14,7 @@ function ContactBtn() {
 
   return (
     <div className='p-1 flex flex-col items-center justify-center rounded-full'>
-      <div id='contacts-container' className={`flex flex-col gap-4 overflow-hidden w-6 md:w-10 ${contactsOpen ? 'h-full' : 'h-0'}`}>
+      <div id='contacts-container' className={`flex flex-col gap-2 md:gap-4 overflow-hidden w-6 md:w-10 ${contactsOpen ? 'h-full' : 'h-0'}`}>
         <Link
           href={'https://github.com/MattKen18'}
           target='_blank'
@@ -59,7 +59,7 @@ function ContactBtn() {
 
       <button 
       onClick={toggleContactsOpen}
-      className='mt-4'>
+      className='mt-2 md:mt-4'>
         <PlusCircleIcon className={`w-6 md:w-10 ${contactsOpen && 'rotate-180 text-slate-800 dark:bg-blue-400 dark:rounded-full'} transition-all duration-200`}/>
       </button>
     </div>
