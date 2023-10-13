@@ -29,7 +29,7 @@ export default function RootLayout({
 
           <div className='max-h-screen snap-mandatory snap-y overflow-scroll md:px-[10%]'>
             {children}
-            <span className='fixed right-[20px] bottom-[20px] lg:right-[40px] lg:bottom-[40px] xl:right-[40px] xg:bottom-[60px]'>
+            <span className='fixed right-[10px] bottom-[10px] lg:right-[40px] lg:bottom-[40px] xl:right-[40px]åå'>
               <ContactBtn />
             </span>
           </div>

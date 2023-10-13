@@ -55,7 +55,7 @@ function Header() {
 
 
   return (
-    <header className={`w-screen fixed px-4 md:block md:px-20 h-fit z-50 bg-transparent`}>
+    <header className={`w-screen fixed px-4 md:block md:px-12 h-fit z-50 bg-transparent`}>
       <div className='relative flex flex-col py-4 backdrop-blur-lg items-center md:flex-row font-bold md:text-2xl'>
         <div className='fixed left-2 top-2 h-full'>
           <button 
@@ -78,7 +78,10 @@ function Header() {
           ref={headerRef}
         >
           <div className='flex flex-1 flex-col md:flex-row items-center justify-center'>
-            <ul className='flex-1 flex flex-col md:flex-row md:px-10 lg:px-20 xl:px-40 2xl:px-96 text-lg rounded-lg'>
+            <ul className='flex-1 flex flex-col md:flex-row lg:px-20 xl:px-40 2xl:px-96 text-lg rounded-lg'>
+              <li className='flex items-center justify-center flex-1 lg:border-r-2 lg:dark:border-r-slate-100/20'>
+                <Link href='/'>Home</Link>
+              </li> 
               <li className='flex items-center justify-center flex-1 lg:border-r-2 lg:dark:border-r-slate-100/20'>
                 <Link href='/projects'>Projects</Link>
               </li>          

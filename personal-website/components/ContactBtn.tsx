@@ -14,7 +14,7 @@ function ContactBtn() {
 
   return (
     <div className='p-1 flex flex-col items-center justify-center rounded-full'>
-      <div id='contacts-container' className={`flex flex-col gap-2 md:gap-4 overflow-hidden w-6 md:w-10 ${contactsOpen ? 'h-full' : 'h-0'}`}>
+      <div id='contacts-container' className={`flex-col gap-2 md:gap-4 overflow-hidden w-6 md:w-10 h-full ${contactsOpen ? 'flex' : 'hidden'}`}>
         <Link
           href={'https://github.com/MattKen18'}
           target='_blank'

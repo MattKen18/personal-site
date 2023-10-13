@@ -42,7 +42,7 @@ function Intro() {
           />
         </div>
         <div className='flex flex-col lg:justify-center relative'>
-          <SectionHeading gradientValue='heading1' align='center' >
+          <SectionHeading gradientValue='heading1' align='center' underline>
             <span className=''>About me#</span>
           </SectionHeading>
           <div className='flex flex-col gap-4 pt-4 text-sm'>

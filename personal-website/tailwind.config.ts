@@ -23,10 +23,15 @@ const config: Config = {
       keyframes: {
         cursor: {
           '50%': { opacity: '0' },
+        },
+        underlineGrow: {
+          '0%': {width: '0'},
+          '100%': {width: '40%'},
         }
       },
       animation: {
-        cursor: 'cursor 1.1s infinite step-start'
+        cursor: 'cursor 1.1s infinite step-start',
+        underlineGrow: 'underlineGrow 0.5s ease-in-out',
       }
     }
   },
