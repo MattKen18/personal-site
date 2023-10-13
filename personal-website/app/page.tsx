@@ -1,11 +1,16 @@
+'use client'
+
 import About from "@/components/About";
 import SectionHeading from "@/components/SectionHeading";
 import Stats from "@/components/Stats";
 import Welcome from "@/components/Welcome";
 import { ArrowDownIcon } from "@heroicons/react/20/solid";
+import { useRef } from "react";
 
 
  export default function Home() {
+  const aboutRef = useRef<HTMLDivElement>(null);
+
   return (
     <main className='p-10'>
       <div className={`snap-center w-full flex flex-col items-center justify-center`}>
@@ -15,10 +20,15 @@ import { ArrowDownIcon } from "@heroicons/react/20/solid";
           </SectionHeading>
           <br />
           <br />
-          <ArrowDownIcon className="w-6 animate-pulse" />
+          <ArrowDownIcon 
+            onClick={() => aboutRef.current?.scrollIntoView({behavior: 'smooth'})}
+            className="w-10 p-2 text-white animate-pulse rounded-full bg-red-500 hover:cursor-pointer "
+          />
         </div>
       </div>
-      <div className="snap-center h-screen flex flex-col items-center justify-center">
+      <div 
+      ref={aboutRef}
+      className="snap-center h-screen flex flex-col items-center justify-center">
         <About />
       </div>
       <div className="snap-center h-screen flex items-center justify-center">

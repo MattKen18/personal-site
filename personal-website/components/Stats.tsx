@@ -30,7 +30,7 @@ function Stats() {
       <div className='flex flex-col space-y-4 mt-4 lg:mt-20 items-center h-[75%] w-full md:w-[80%] xl:w-[70%] 2xl:w-[60%]'>
         <div id="skills-container" className='dark:text-white w-full h-full grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-4 lg:gap-8 text-xs xl:text-lg 2xl:text-xl'>
           <div className='relative group overflow-hidden flex flex-col -space-y-2 lg:space-y-2 items-center justify-center rounded-lg p-2 font-bold hover:cursor-default hover:scale-110 row-span-2'>
-            <div className='flex group items-center justify-center absolute overfow-hidden top-0 left-0 w-0 h-full -z-10 group-hover:w-full bg-yellow-500 group-hover:z-10 transition-all duration-200'>
+            <div className='flex group items-center justify-center absolute overfow-hidden top-0 left-0 w-0 h-full -z-10 group-hover:w-full bg-sky-800 group-hover:z-10 transition-all duration-200'>
               
             <div className='relative text-[.4rem] sm:text-[.55rem] lg:text-[.6rem] 2xl:text-[.7rem] leading-tight group-hover:flex hidden text-white w-full h-full justify-center items-center p-4'>
                 <SkillLevel level='Proficient' />
@@ -60,7 +60,7 @@ function Stats() {
             </div>
           </div>
           <div className='relative group overflow-hidden flex items-center flex-col lg:flex-row justify-center rounded-lg p-2 font-bold hover:cursor-default hover:scale-110 '>
-            <div className='flex items-center justify-center absolute overfow-hidden bottom-0 left-0 w-full h-0 -z-10 group-hover:h-full bg-blue-800 group-hover:z-10 transition-all duration-200'>
+            <div className='flex items-center justify-center absolute overfow-hidden bottom-0 left-0 w-full h-0 -z-10 group-hover:h-full bg-sky-800 group-hover:z-10 transition-all duration-200'>
               
               <div className='relative text-[.4rem] sm:text-[.55rem] lg:text-[.6rem] 2xl:text-[.7rem] leading-tight group-hover:flex hidden text-white w-full h-full justify-center items-center p-4'>
                 <SkillLevel level='Proficient' />
@@ -90,7 +90,7 @@ function Stats() {
             </div>
           </div>
           <div className='relative group overflow-hidden flex items-center flex-col lg:flex-row justify-center rounded-lg p-2 font-bold hover:cursor-default hover:scale-110 '>
-            <div className='flex items-center justify-center absolute overfow-hidden top-0 left-0 w-full h-0 -z-10 group-hover:h-full bg-orange-600 group-hover:z-10 transition-all duration-200'>
+            <div className='flex items-center justify-center absolute overfow-hidden top-0 left-0 w-full h-0 -z-10 group-hover:h-full bg-sky-800 group-hover:z-10 transition-all duration-200'>
             
             <div className='relative text-[.4rem] sm:text-[.55rem] lg:text-[.6rem] 2xl:text-[.7rem] leading-tight group-hover:flex hidden text-white w-full h-full justify-center items-center p-4'>
               <SkillLevel level='Proficient' />
@@ -120,7 +120,7 @@ function Stats() {
             </div>
           </div>
           <div className='relative group overflow-hidden flex items-center flex-col lg:flex-row justify-center rounded-lg p-2 font-bold hover:cursor-default hover:scale-110 sm:col-span-2'>
-            <div className='flex items-center justify-center absolute overfow-hidden top-0 right-0 w-0 h-full -z-10 group-hover:w-full bg-sky-400 group-hover:z-10 transition-all duration-200'>
+            <div className='flex items-center justify-center absolute overfow-hidden top-0 right-0 w-0 h-full -z-10 group-hover:w-full bg-sky-800 group-hover:z-10 transition-all duration-200'>
               <div className='relative text-[.4rem] sm:text-[.55rem] lg:text-[.6rem] 2xl:text-[.7rem] leading-tight group-hover:flex hidden text-white w-full h-full justify-center items-center p-4'>
                 <SkillLevel level='Proficient' />
                 <ul className='w-[70%] list-disc max-h-[70%]'>
@@ -148,7 +148,7 @@ function Stats() {
             </div>
           </div>
           <div className='relative group overflow-hidden flex items-center flex-col lg:flex-row justify-center rounded-lg p-2 font-bold hover:cursor-default hover:scale-110'>
-            <div className='flex items-center justify-center absolute overfow-hidden bottom-0 left-0 w-full h-0 -z-10 group-hover:h-full bg-gray-800 group-hover:z-10 transition-all duration-200'>
+            <div className='flex items-center justify-center absolute overfow-hidden bottom-0 left-0 w-full h-0 -z-10 group-hover:h-full bg-sky-800 group-hover:z-10 transition-all duration-200'>
               <div className='relative text-[.4rem] sm:text-[.55rem] lg:text-[.6rem] 2xl:text-[.7rem] leading-tight group-hover:flex hidden text-white w-full h-full justify-center items-center p-4'>
                 <SkillLevel level='Intermediate' />
                 <ul className='w-[70%] list-disc max-h-[70%]'>
@@ -203,7 +203,7 @@ function Stats() {
             </div>
           </div>
           <div className='relative group overflow-hidden flex items-center flex-col lg:flex-row justify-center rounded-lg p-2 font-bold hover:cursor-default hover:scale-110'>
-            <div className='flex items-center justify-center absolute overfow-hidden bottom-0 left-0 w-full h-0 -z-10 group-hover:h-full bg-amber-500 group-hover:z-10 transition-all duration-200'>
+            <div className='flex items-center justify-center absolute overfow-hidden bottom-0 left-0 w-full h-0 -z-10 group-hover:h-full bg-sky-800 group-hover:z-10 transition-all duration-200'>
               <div className='relative text-[.4rem] sm:text-[.55rem] lg:text-[.6rem] 2xl:text-[.7rem] leading-tight group-hover:flex hidden text-white w-full h-full justify-center items-center p-4'>
                 <SkillLevel level='Intermediate' />
                 <ul className='w-[70%] list-disc max-h-[70%]'>
@@ -231,7 +231,7 @@ function Stats() {
             </div>       
           </div>
           <div className='relative group overflow-hidden flex items-center flex-col lg:flex-row justify-center rounded-lg p-2 font-bold hover:cursor-default hover:scale-110 lg:col-span-2'>
-            <div className='flex items-center justify-center absolute overfow-hidden bottom-0 left-0 w-0 h-full -z-10 group-hover:w-full bg-indigo-500 group-hover:z-10 transition-all duration-200'>
+            <div className='flex items-center justify-center absolute overfow-hidden bottom-0 left-0 w-0 h-full -z-10 group-hover:w-full bg-sky-800 group-hover:z-10 transition-all duration-200'>
               <div className='relative text-[.4rem] sm:text-[.55rem] lg:text-[.6rem] 2xl:text-[.7rem] leading-tight group-hover:flex hidden text-white w-full h-full justify-center items-center p-4'>
                 <SkillLevel level='Beginner' />
                 <ul className='w-[70%] list-disc max-h-[70%]'>
@@ -260,7 +260,7 @@ function Stats() {
             </div>      
           </div>
           <div className='relative group overflow-hidden flex items-center flex-col lg:flex-row justify-center rounded-lg p-2 font-bold hover:cursor-default hover:scale-110'>
-            <div className='flex items-center justify-center absolute overfow-hidden top-0 left-0 w-full h-0 -z-10 group-hover:h-full bg-cyan-500 group-hover:z-10 transition-all duration-200'>
+            <div className='flex items-center justify-center absolute overfow-hidden top-0 left-0 w-full h-0 -z-10 group-hover:h-full bg-sky-800 group-hover:z-10 transition-all duration-200'>
             <div className='relative text-[.4rem] sm:text-[.55rem] lg:text-[.6rem] 2xl:text-[.7rem] leading-tight group-hover:flex hidden text-white w-full h-full justify-center items-center p-4'>
                 <SkillLevel level='Beginner' />
                 <ul className='w-[70%] list-disc max-h-[70%]'>

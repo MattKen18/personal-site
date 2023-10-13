@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { MutableRefObject, useRef } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import SectionHeading from './SectionHeading'
@@ -16,9 +16,11 @@ const aboutText : {
 
 
 function Intro() {
+  const aboutRef = useRef<HTMLDivElement | null>(null);
   
   return (
     <motion.div
+      ref={aboutRef}
       className='flex flex-col gap-20 items-center justify-center p-4 rounded-xl w-[80%] h-[80%] lg:h-full md:w-[70%] lg:w-[60%]'
       animate={{
         opacity: 0,
@@ -29,7 +31,8 @@ function Intro() {
         scale: 1,
       }}
       >
-      <div className='relative max-h-[80%] flex flex-col items-center justify-center lg:flex-row md:gap-10 gap-4'>
+      <div 
+      className='relative max-h-[80%] flex flex-col items-center justify-center lg:flex-row md:gap-10 gap-4'>
         <div className='overflow-hidden w-full h-full'>
           <Image
             src='/profile.png'
