@@ -56,6 +56,11 @@ function Header() {
     return () => window.removeEventListener('resize', handleHeaderResize);
   }, [headerShown])
 
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      hideHeader();
+    }
+  }, [])
 
   return (
     <header className={`w-screen fixed px-4 md:block md:px-12 h-fit z-50 bg-transparent`}>
@@ -70,7 +75,7 @@ function Header() {
         </div>
 
         <SectionHeading gradientValue={'logo'} align='center'>
-          <span className={`text-xl md:text-4xl`}>
+          <span className={`text-xl md:text-2xl lg:text-4xl`}>
             <Link href='/'>
               <span className=''>@</span>
               <span className=''>Matthew</span>
@@ -83,7 +88,7 @@ function Header() {
           ref={headerRef}
         >
           <div className='flex flex-1 flex-col md:flex-row items-center justify-center text-dark-text dark:text-light-text'>
-            <ul className='flex-1 flex flex-col md:flex-row lg:px-20 xl:px-40 2xl:px-80 text-lg rounded-lg'>
+            <ul className='flex-1 flex flex-col md:flex-row space-y-1 md:space-y-0 pt-2 md:pt-0 lg:px-20 xl:px-40 2xl:px-80 text-sm md:text-lg rounded-lg'>
               <li className='flex items-center justify-center flex-1'>
                 <Link href='/' className={`site-link ${pathname == "/" && "active-link"}`}>Home</Link>
               </li> 

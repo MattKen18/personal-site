@@ -1,4 +1,6 @@
-import { use, useEffect, useState } from 'react'
+'use client'
+
+import { useEffect, useState } from 'react'
 import { Switch } from '@headlessui/react'
 import useThemeStore from '@/slices/themeSlice'
 import { MoonIcon, SunIcon } from '@heroicons/react/20/solid'
