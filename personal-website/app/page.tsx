@@ -1,6 +1,7 @@
 'use client'
 
 import About from "@/components/About";
+import Background from "@/components/Background";
 import SectionHeading from "@/components/SectionHeading";
 import Stats from "@/components/Stats";
 import Welcome from "@/components/Welcome";
@@ -13,7 +14,10 @@ import { useRef } from "react";
 
   return (
     <main className='p-10'>
-      <div className={`snap-center w-full flex flex-col items-center justify-center`}>
+      <div className={`
+      snap-center w-full flex flex-col items-center justify-center
+
+      `}>
         <div className="flex flex-col justify-center  items-center h-screen">
           <SectionHeading gradientValue='red-blue-purple' font='fira'>
             <Welcome />

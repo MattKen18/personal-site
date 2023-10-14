@@ -37,7 +37,7 @@ function SectionHeading({children, gradientValue, font, align, underline}
   }, [theme])
 
   return (
-    <div className={`flex ${align && textAlign[align]}`}>
+    <span className={`flex ${align && textAlign[align]}`}>
       <h1 className={
         `${font && fonts[font]} flex items-center justify-center w-fit font-bold text-2xl lg:text-3xl ${gradient ?? 'dark:text-light-text text-slate-500'}
         ${underline && 'relative before:absolute before:-bottom-1 before:left-0 before:h-1 before:w-[20%] before:z-10 z-0 before:bg-red-500 before:transform-gpu before:transition-all before:duration-300 hover:before:w-[40%]'}
@@ -45,7 +45,7 @@ function SectionHeading({children, gradientValue, font, align, underline}
         }>
         {children}
       </h1>
-    </div>
+    </span>
   )
 }
 

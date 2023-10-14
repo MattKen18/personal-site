@@ -20,16 +20,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className=' overflow-x-hidden'>
-      <body className={`${inter.className} min-h-screen`}>
+    <html lang="en" className='text-sm overflow-x-hidden'>
+      <body className={`${inter.className} min-h-screen relative`}>
         <ThemeContext>
           <div className=''>
             <Header />
           </div>
 
-          <div className='max-h-screen snap-mandatory snap-y overflow-scroll md:px-[10%]'>
+          <div className='max-h-screen snap-mandatory snap-y overflow-y-scroll overflow-x-hidden md:px-[10%]'>
             {children}
-            <span className='fixed right-[10px] bottom-[10px] lg:right-[40px] lg:bottom-[40px] xl:right-[40px]åå'>
+            <span className='fixed right-[10px] bottom-[10px] lg:right-[40px] lg:bottom-[40px] xl:right-[40px]'>
               <ContactBtn />
             </span>
           </div>

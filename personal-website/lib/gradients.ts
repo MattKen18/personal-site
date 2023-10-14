@@ -9,6 +9,8 @@ export const gradients: Gradient = {
     "base": "",
     "logo": "bg-clip-text text-transparent bg-gradient-to-r from-gray-200 via-rose-400 to-yellow-600",
     "heading1": "bg-clip-text text-transparent bg-gradient-to-r from-slate-200 via-white to-blue-400",
+    "heading2": "bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-yellow-400",
+    
     "gray-blue-purple":  'bg-clip-text text-transparent bg-gradient-to-r from-gray-600 via-blue-800 to-pink-900',
     "red-blue-purple":  'bg-clip-text text-transparent bg-gradient-to-r  from-rose-500 via-blue-500 to-purple-600',
     "pink-red": 'bg-clip-text text-transparent bg-gradient-to-r from-red-200 to-red-600',
@@ -20,6 +22,8 @@ export const gradients: Gradient = {
     "base": "",
     "logo": "bg-clip-text text-transparent bg-gradient-to-r from-gray-800 via-rose-600 to-blue-800",
     "heading1": "bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-blue-400",
+    "heading2": "bg-clip-text text-transparent bg-gradient-to-r from-indigo-800 to-yellow-800",
+    
     "gray-blue-purple":  'bg-clip-text text-transparent bg-gradient-to-r  from-gray-500 via-blue-500 to-purple-600',
     "red-blue-purple":  'bg-clip-text text-transparent bg-gradient-to-r  from-rose-500 via-blue-500 to-purple-600',
     "pink-red": 'bg-clip-text text-transparent bg-gradient-to-r from-red-200 to-red-600',
