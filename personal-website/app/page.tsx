@@ -20,10 +20,13 @@ import { useRef } from "react";
           </SectionHeading>
           <br />
           <br />
-          <ArrowDownIcon 
+          <button
             onClick={() => aboutRef.current?.scrollIntoView({behavior: 'smooth'})}
-            className="w-10 p-2 text-white animate-pulse rounded-full bg-red-500 hover:cursor-pointer "
-          />
+            className="p-2 text-white animate-pulse rounded-full bg-red-500">
+            <ArrowDownIcon 
+              className="w-8"
+            />
+          </button>
         </div>
       </div>
       <div 
