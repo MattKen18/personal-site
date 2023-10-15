@@ -1,12 +1,58 @@
 const projects: ProjectsStore = {
   'weviews' : {
+    name: 'weviews',
     title: 'Weviews',
     tools: ['JavaScript', 'ReactJs', 'Firebase', 'TailwindCSS', 'AWS'],
     description: 'Website where users can create, share, and read reviews on absolutely anything.',
     status: 'In Progress',
     link: "https://github.com/MattKen18/review-site",
-    images: ["/weviews1.png", "/weviews2.png", "/weviews3.png", "/weviews4.png",],
-  }
+    year: 2023,
+  },
+  'chegbase' : {
+    name: 'chegbase',
+    title: 'ChegBase',
+    tools: ['Python', 'JavaScript', 'Django', 'SQLite', 'HTML', 'CSS'],
+    description: 'Online bookstore for selling new and used books.',
+    status: 'Completed',
+    link: "https://github.com/MattKen18/ecommerce",
+    year: 2020,
+  },
+  'construction' : {
+    name: 'construction',
+    title: 'Construction Site',
+    tools: ['HTML', 'JavaScript', 'CSS'],
+    description: 'I made this construction site website for my WebDesign course',
+    status: 'Completed',
+    link: "https://github.com/MattKen18/construction-site",
+    year: 2022,
+  },
+  'knowledgebase' : {
+    name: 'knowledgebase',
+    title: 'KnowledgeBase',
+    tools: ['Python', 'JavaScript', 'Django', 'SQLite', 'ReactJs', 'Django REST Framework', 'HTML', 'CSS'],
+    description: 'Online bookstore for selling new and used books.',
+    status: 'Completed',
+    link: "https://github.com/MattKen18/ecommerce",
+    year: 2021,
+  },
+  'personalsite' : {
+    name: 'personalsite',
+    title: 'Personal Site',
+    tools: ['JavaScript', 'HTML', 'CSS'],
+    description: 'Personal website created for my WebDesign Course.',
+    status: 'Completed',
+    link: "https://github.com/MattKen18/CIS210Final",
+    year: 2022,
+  },
+  'deliveroo' : {
+    name: 'deliveroo',
+    title: 'Deliveroo Clone',
+    tools: ['JavaScript', 'ReactNative', 'TailwindCSS', 'Sanity', 'HTML', 'CSS'],
+    description: 'Clone of the Deliveroo app',
+    status: 'Completed',
+    link: "https://github.com/MattKen18/deliveroo-clone",
+    year: 2022,
+  },
 }
 
 export default projects;

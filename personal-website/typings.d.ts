@@ -11,10 +11,11 @@ type ProjectsStore = {
 }
 
 type Project = {
+  name: string,
   title: string,
   tools: string[],
   description: string;
   status: "In Progress" | "Completed",
   link?: string,
-  images?: string[],
+  year: number,
 }
