@@ -3,7 +3,7 @@ const projects: ProjectsStore = {
     name: 'weviews',
     title: 'Weviews',
     tools: ['JavaScript', 'ReactJs', 'Firebase', 'TailwindCSS', 'AWS'],
-    description: 'Website where users can create, share, and read reviews on absolutely anything.',
+    description: 'Website where users can create, share, and read reviews on anything.',
     status: 'In Progress',
     link: "https://github.com/MattKen18/review-site",
     year: 2023,

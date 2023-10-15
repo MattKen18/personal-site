@@ -13,6 +13,14 @@ type props = {
 }
 
 const ProjectCarousel = ({ count, images, projectDetails } : props) => {
+  const carousel = useRef<HTMLDivElement>(null);
+  
+  useEffect(() => {
+    if (carousel.current != null) {
+      carousel.current.scrollLeft = 0;
+    }  
+
+  }, [images])
 
   return (
     <>
@@ -62,8 +70,8 @@ const ProjectCarousel = ({ count, images, projectDetails } : props) => {
         </div>
 
         {/* Image Slider */}
-        <div className='group relative basis-4/5 p-2 flex-grow-1 h-fit rounded-xl bg-slate-400/20 overflow-hidden'>
-          <div className='flex w-full h-full rounded-lg gap-8 snap-mandatory snap-x overflow-x-scroll overflow-y-hidden'>
+        <div className='carousel group relative basis-4/5 p-2 flex-grow-1 h-fit rounded-xl bg-slate-400/20 overflow-hidden'>
+          <div ref={carousel} className='flex w-full h-full rounded-lg gap-8 snap-mandatory snap-x overflow-x-scroll overflow-y-hidden'>
             {
               images &&
               images.map((img, i) => (
