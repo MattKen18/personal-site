@@ -2,6 +2,7 @@ import { GlobeAmericasIcon } from '@heroicons/react/20/solid'
 import { ClockIcon } from '@heroicons/react/24/outline'
 import Image, { StaticImageData } from 'next/image'
 import React from 'react'
+import ItemsList from './ItemsList'
 
 type props = {
   company?: string,
@@ -11,12 +12,16 @@ type props = {
   position: string,
   location: string,
   duration: string,
-  lines: string[]
+  lines: {
+    [key: string]: {
+      content: string
+    }
+  }
 }
 
 function ExperienceCard({company, inc, image1, image2, position, location, duration, lines} : props) {
   return (
-    <div className='flex flex-col gap-1 hover:scale-[1.03] lg:hover:scale-105 duration-200'>
+    <div className='flex flex-col gap-1'>
       {/* company and location row */}
       <div className='flex justify-between'>
         <h3  className='pl-2 border-l-2 border-emerald-400/80'>
@@ -67,15 +72,11 @@ function ExperienceCard({company, inc, image1, image2, position, location, durat
       </div>
 
       {/* details */}
-      <ul className='mt-4 flex flex-col gap-4 p-4 rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]'>
-        {
-          lines.map((line, i) => (
-            <li key={i} className='font-light'>
-              {line}
-            </li>
-          ))
-        }
-      </ul>
+      <div className='mt-4'>
+        <ItemsList
+          items={lines}
+        />
+      </div>
       <div className='h-2 w-full my-4 bg-slate-400/20 rounded-full' />
     </div>
   )

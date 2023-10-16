@@ -8,9 +8,32 @@ import Youtube from '@/public/resumeImages/youtube.png'
 import Relx from '@/public/resumeImages/relx.png'
 import LexisNexis from '@/public/resumeImages/lexisnexis.png'
 import Link from 'next/link'
+import ItemsList from '@/components/ItemsList'
+import { ArrowDownCircleIcon } from '@heroicons/react/20/solid'
 
 
 function page() {
+
+  const convertToObj = (arr: string[]) : {
+    [key: number]: {
+      content: string,
+    }
+  } => {
+    const obj: {
+      [key: number] : {
+        content: string
+      }
+    } = {}
+
+    arr.map((item, i) => {
+      obj[i] = {
+        content: item
+      }
+    })
+    return obj;
+  }
+
+
   const languages: {
     [key: string]: {
       color: string
@@ -51,11 +74,39 @@ function page() {
     },
   };
 
-  const certifications = [
+  const experienceStore: {
+    [key: string] : string[]
+  } = {
+    0: [
+      `Redesigned the purchase flow within YouTube TV Living Room to enhance user experience and increase user
+      conversion rate.`,
+      `Added server functionality (C++) to return the necessary protocol buffers for a new QR code handoff feature.`,
+      `Refactored code to support adaptability, and implemented experiments to gate changes, enabling efficient and
+      smooth ramping of the update.`,
+      `Conducted rigorous testing and debugging to ensure a bug-free implementation and smooth user experience.`,
+    ],
+    1: [
+      `Embarked on a project aimed at identifying Indicators of Compromise (IOCs) within the organization and
+      enacted the necessary procedures to report found vulnerabilities.`,
+      `Gained valuable experience using tools such as AWS, the Serverless Framework, TheHive, and Docker.`
+    ]
+  }
+
+  const experiences = [];
+  for (let i in experienceStore) {
+    experiences.push(convertToObj(experienceStore[i]))
+  }
+
+
+  const certificationsArr = [
     'JPMorgan Chase & Co. Software Engineering Virtual Experience.'
   ]
 
-  const courses = [
+  const certifications = convertToObj(certificationsArr);
+
+
+
+  const coursesArr = [
     'Introduction to Programming I',
     'Programming II',
     'Introduction to Cyber Operations',
@@ -65,22 +116,62 @@ function page() {
     'Web Page Design I & II',
     'Networking I',
   ]
+  const courses = convertToObj(coursesArr);
 
-  const honors = [
-    'Shaw University Honors Program (2021-2025)',
-    'Shaw University Presidential Scholarship Recipient (2021-2025)',
-    "Shaw University President's List - GPA of 4.0 (2022-2023)"
-  ]
+  coursesArr.map((item, i) => {
+    courses[i] = {content: item}
+  })
+
+  const honors = {
+    0: {
+      content: 'Shaw University Honors Program',
+      duration: '(2021-2025)',
+    },
+    1: {
+      content: 'Shaw University Presidential Scholarship Recipient',
+      duration: '(2021-2025)',
+    },
+    2: {
+      content: "Shaw University President's List - GPA of 4.0 (2022-2023)"
+    }    
+  }
+
+  const leadership = {
+    0: {
+      content: 'Shaw University Honda Campus All-Star Challenge (HCASC) Team',
+      duration: '(2021-Present)'
+    },
+    1: {
+      content: 'Association for Computing Machinery',
+      duration: '(2021-Present)'
+    },
+    2: {
+      content: 'Shaw University Cy(Bear) Security Research Group - IOC Intrusion Detection System',
+      duration: '(2022-Present)',
+    },
+    3: {
+      content: 'National Society of Black Engineers (NSBE)',
+      duration: '(2023)'
+    }
+  }
+  
 
   return (
     <div className='w-full min-h-screen flex flex-col items-center pt-36 mb-40'>
       <SectionHeading gradientValue='heading1' align={'center'} underline>
         <span>
-          My Resume
+          My R&eacute;sum&eacute;
         </span>
       </SectionHeading>
+      <Link 
+        className='mt-4 p-2 px-4 bg-red-500 text-white rounded-full flex items-center justify-center gap-1'
+        href={'/Matthew Carby Resume.pdf'}
+        target='_blank'>
+          R&eacute;sum&eacute;
+          <ArrowDownCircleIcon className='w-6' />
+      </Link>
       {/* resume */}
-      <div className='flex flex-col w-[80%] md:w-[75%] xl:w-[80%] 2xl:w-[70%] mt-12 gap-4'>
+      <div className='flex flex-col w-[80%] md:w-[75%] xl:w-full 2xl:w-[70%] mt-12 gap-4'>
         {/* education */}
         <div className='w-full xl:w-1/2 relative flex flex-col space-y-2 p-2 md:p-4 rounded-xl bg-slate-400/20'>
           <SectionHeading gradientValue='heading2'>
@@ -110,14 +201,7 @@ function page() {
                 position='STEP Intern'
                 location='San Bruno, CA'
                 duration='May 22 - Aug 12 2023'
-                lines={[
-                  `Redesigned the purchase flow within YouTube TV Living Room to enhance user experience and increase user
-                  conversion rate.`,
-                  `Added server functionality (C++) to return the necessary protocol buffers for a new QR code handoff feature.`,
-                  `Refactored code to support adaptability, and implemented experiments to gate changes, enabling efficient and
-                  smooth ramping of the update.`,
-                  `Conducted rigorous testing and debugging to ensure a bug-free implementation and smooth user experience.`,
-                ]}
+                lines={experiences[0]}
               />
               <ExperienceCard 
                 inc={true}
@@ -126,11 +210,7 @@ function page() {
                 position='Security Analyst Intern'
                 location='Raleigh, NC'
                 duration='June 9 - Oct 6 2022'
-                lines={[
-                  `Embarked on a project aimed at identifying Indicators of Compromise (IOCs) within the organization and
-                  enacted the necessary procedures to report found vulnerabilities.`,
-                  `Gained valuable experience using tools such as AWS, the Serverless Framework, TheHive, and Docker.`,
-                ]}
+                lines={experiences[1]}
               />
             </div>
           </div>
@@ -161,18 +241,11 @@ function page() {
                   <h3 className='font-bold pl-2 border-l-2 border-emerald-400/80'>
                     Certifications
                   </h3>
-                  <ul className='mt-2 pl-2'>
-                    {
-                      certifications.map((cert, i) => (
-                        <li
-                          key={i}
-                          className='font-light p-1'
-                        >
-                          {cert}
-                        </li>
-                      ))
-                    }
-                  </ul>
+                  <div className='mt-4'>
+                    <ItemsList
+                      items={certifications}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -181,42 +254,42 @@ function page() {
               <SectionHeading gradientValue='heading2'>
                 <span className='text-lg'>Coursework</span>
               </SectionHeading>
-              <div className='flex flex-col'>
-                <ul className='md:columns-2'>
-                  {
-                    courses.map((course, i) => (
-                      <li key={i} className='my-2 font-light before:content-["⟢"] before:pr-1'>{course}</li>
-                    ))
-                  }
-                </ul>
+              <ItemsList
+                items={courses}
+                columns='md:columns-2'
+                listStyle='before:content-["⟢"]'
+              />
+            </div>
+            {/* Projects and honors row */}
+            <div className='basis-1/3 xl:basis-1/2 h-fit flex flex-col md:flex-row gap-4'>
+              {/* Projects */}
+              <div className='relative flex w-fit h-fit flex-col space-y-2 p-2 md:p-4 rounded-xl bg-slate-400/20'>
+                <SectionHeading gradientValue='heading2'>
+                  <span className='text-lg'>Projects</span>
+                </SectionHeading>
+                <div className='pt-2'>
+                  <Link href='/projects' className='py-2 px-4 block rounded-full bg-red-500 text-white font-bold'>Go to project page &#8592;</Link>
+                </div>
+                
+              </div>
+              {/* Honors */}
+              <div className='relative flex flex-1 flex-col space-y-2 p-2 md:p-4 rounded-xl bg-slate-400/20'>
+                <SectionHeading gradientValue='heading2'>
+                  <span className='text-lg'>Honors</span>
+                </SectionHeading>
+                <ItemsList 
+                  items={honors}
+                />
               </div>
             </div>
-            {/* Projects */}
-            <div className='relative flex w-fit flex-col space-y-2 p-2 md:p-4 rounded-xl bg-slate-400/20'>
+            {/* Leadership */}
+            <div className='relative flex flex-1 flex-col space-y-2 p-2 md:p-4 rounded-xl bg-slate-400/20'>
               <SectionHeading gradientValue='heading2'>
-                <span className='text-lg'>Projects</span>
+                <span className='text-lg'>Leadership & Extracurricular</span>
               </SectionHeading>
-              <div className='pt-2'>
-                <Link href='/projects' className='p-2 block rounded-full bg-red-500 text-white font-bold'>Go to project page &#8592;</Link>
-              </div>
-            </div>
-            {/* Honors */}
-            <div className='relative flex flex-col space-y-2 p-2 md:p-4 rounded-xl bg-slate-400/20'>
-              <SectionHeading gradientValue='heading2'>
-                <span className='text-lg'>Honors</span>
-              </SectionHeading>
-              <ul>
-                {
-                  honors.map((honor, i) => (
-                    <li 
-                    key={i}
-                    className='font-light my-1'
-                    >
-                      {honor}
-                    </li>
-                  ))
-                }
-              </ul>
+              <ItemsList 
+                items={leadership}
+              />
             </div>
           </div>
         </div>

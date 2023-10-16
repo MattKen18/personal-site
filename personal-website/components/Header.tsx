@@ -96,7 +96,7 @@ function Header() {
                 <Link href='/projects' className={`site-link ${pathname == "/projects" && "active-link"}`}>Projects</Link>
               </li>          
               <li className='flex items-center justify-center flex-1'>
-                <Link href='/resume' className={`site-link ${pathname == "/resume" && "active-link"}`}>Resume</Link>
+                <Link href='/resume' className={`site-link ${pathname == "/resume" && "active-link"}`}>R&eacute;sum&eacute;</Link>
               </li>
               <li className='flex items-center justify-center flex-1'>
                 <Link href='/interests' className={`site-link ${pathname == "/interests" && "active-link"}`}>Interests</Link>
