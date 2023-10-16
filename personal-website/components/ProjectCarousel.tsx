@@ -36,7 +36,7 @@ const ProjectCarousel = ({ count, images, projectDetails } : props) => {
                   {projectDetails.title}
                 </span>
               </SectionHeading>
-              <span className={`${projectDetails.status === 'In Progress' ? 'text-emerald-500' : 'text-'} text-xs font-bold p-1 px-[0.5rem] border-l-2 border-r-2 border-gray-300 dark:border-light-text`}>
+              <span className={`${projectDetails.status === 'In Progress' ? 'text-emerald-500' : ''} text-xs font-bold p-1 px-[0.5rem] border-l-2 border-r-2 border-gray-300 dark:border-light-text`}>
                 {projectDetails.status}
               </span>
               <span className='font-bold text-xs text-dark-text/70 dark:text-light-text'>
