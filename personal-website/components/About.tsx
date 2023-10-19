@@ -8,8 +8,8 @@ import SectionHeading from './SectionHeading'
 const aboutText : {
   [key: number] : string
 } = {
-  0: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula neque eu dui pelle',
-  1: 'Ntesque, non scelerisque tortor semper. Fusce laoreet purus sit amet quam malesuada, at sodales.',
+  0: 'My name is Matthew Carby. I am a Junior Computer Science Major at Shaw University in Raleigh, NC',
+  1: 'I have a passion for web development and cybersecurity',
   2: 'Libero iaculis. Nullam eu odio eget dolor laoreet posuere. Curabitur ullamcorper nibh vel justo.', 
   // 3: 'Bibendum, non interdum metus bibendum. Quisque aliquam mi in lectus suscipit, sed cursus purus feugiat. Libero iaculis. Nullam eu odio eget dolor laoreet posuere. Curabitur ullamcorper nibh vel justo.',
 }
@@ -46,7 +46,7 @@ function Intro() {
         </div>
         <div className='flex flex-col lg:justify-center relative'>
           <SectionHeading gradientValue='heading1' align='center' underline>
-            <span className=''>About me#</span>
+            <span className=''>About me</span>
           </SectionHeading>
           <div className='flex flex-col gap-4 pt-4 text-sm'>
             {

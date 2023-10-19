@@ -16,6 +16,7 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-loader-spinner": "^5.4.5",
     "react-type-animation": "^3.1.0",
     "zustand": "^4.4.1"
   },
