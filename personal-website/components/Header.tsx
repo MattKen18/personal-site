@@ -59,8 +59,11 @@ function Header() {
   useEffect(() => {
     if (window.innerWidth < 768) {
       hideHeader();
+    } else {
+      showHeader()
     }
-  }, [])
+  })
+
 
   return (
     <header className={`w-screen fixed px-4 md:block md:px-12 h-fit z-50 bg-transparent`}>

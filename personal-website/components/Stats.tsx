@@ -11,20 +11,14 @@ import SkillLevel from './SkillLevel'
 function Stats() {
 
   return (
-    <motion.div className='w-full h-[80%] lg:h-full flex flex-col lg:flex-row lg:gap-14 items-center md:justify-center'
-      initial={{
-        scale: 0,
-      }}
-      whileInView={{ 
-        scale: 1,
-      }}
+    <div className='w-full h-[80%] lg:h-full flex flex-col lg:flex-row lg:gap-14 items-center md:justify-center'
     >
       <div>
         <SectionHeading 
           gradientValue='heading1'
           underline
         >
-          <p className='break-words w-30'>Skills & Tools</p>
+          <p className='break-words w-30'>Tech Stack</p>
         </SectionHeading>
       </div>
       <div className='flex flex-col space-y-4 mt-4 lg:mt-20 items-center h-[75%] w-full md:w-[80%] xl:w-[70%] 2xl:w-[60%]'>
@@ -293,7 +287,7 @@ function Stats() {
         </Link>  
       </div>
 
-    </motion.div>
+    </div>
   )
 }
 

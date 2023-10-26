@@ -1,7 +1,7 @@
 import ProjectCarousel from '@/components/ProjectCarousel'
 import SectionHeading from '@/components/SectionHeading'
 import projects from '@/lib/projects'
-import React, { useEffect } from 'react'
+import React from 'react'
 import projectImages from '@/lib/projectImages'
 
 
@@ -14,6 +14,8 @@ const page = () => {
         <span>My Projects</span>
       </SectionHeading>
       <br />
+      <br />
+      <p className='font-bold animate-pulse text-slate-500 dark:text-light-text'>scroll through each carousel!</p>
       <br />
       <div className='flex flex-col space-y-12 w-full items-center justify-center'>
         {

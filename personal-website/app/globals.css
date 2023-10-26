@@ -67,3 +67,7 @@ a.site-link.active-link {
   color: white;
   border-radius: 9999px;
 }
+
+.clipped {
+  clip-path: polygon(34.19% 18.38%, 57.75% 91.5%, 75% 25%, 14.84% 46.3%, 92.25% 67.25%, 25% 75%);
+}
