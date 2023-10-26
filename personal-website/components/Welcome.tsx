@@ -58,7 +58,7 @@ function Welcome() {
         {/* intro section */}
         <div className='h-auto w-[80%] md:w-fit 2xl:w-[50%] min-h-[20rem] flex flex-col relative'>
           <SectionHeading gradientValue=''>
-            <span className='text-xl md:text-2xl 2xl:text-4xl'>Hey There! I'm</span>
+            <span className='text-xl md:text-2xl 2xl:text-4xl'>Hey There! I&apos;m</span>
           </SectionHeading>
           <SectionHeading gradientValue='logo'>
             <TypeAnimation
@@ -80,7 +80,7 @@ function Welcome() {
             I am a Junior Computer Science major with a passion for web development and Cybersecurity.
           </p>
           <div className='mt-4 flex gap-4 items-center'>
-          <p className='font-bold text-slate-500 dark:text-light-text'>Let's Connect!</p>
+          <p className='font-bold text-slate-500 dark:text-light-text'>Let&apos;s Connect!</p>
             <motion.button
               whileTap={{
                 scale: 1.2,
