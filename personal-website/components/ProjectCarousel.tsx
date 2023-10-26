@@ -1,9 +1,9 @@
 'use client'
 
-import { ArrowDownIcon, ArrowLeftIcon, ArrowRightIcon, FolderIcon } from '@heroicons/react/20/solid'
+import { FolderIcon } from '@heroicons/react/20/solid'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
-import React, { use, useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import SectionHeading from './SectionHeading'
 
 type props = {
@@ -16,9 +16,11 @@ const ProjectCarousel = ({ count, images, projectDetails } : props) => {
   const carousel = useRef<HTMLDivElement>(null);
   
   useEffect(() => {
-    if (carousel.current != null) {
-      carousel.current.scrollLeft = 0;
-    }  
+    setTimeout(() => {
+      if (carousel.current != null) {
+        carousel.current.scrollLeft = 0;
+      }  
+    }, 1000);
 
   }, [images])
 

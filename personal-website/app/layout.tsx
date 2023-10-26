@@ -27,11 +27,11 @@ export default function RootLayout({
             <Header />
           </div>
 
-          <div className='max-h-screen snap-mandatory snap-y overflow-y-scroll overflow-x-hidden md:px-[10%]'>
+          <div className='max-h-screen snap-mandatory snap-y overflow-y-auto overflow-x-hidden md:px-[10%]'>
             {children}
-            <span className='fixed right-[10px] bottom-[10px] lg:right-[40px] lg:bottom-[40px] xl:right-[40px]'>
+            {/* <span className='z-10 fixed right-[10px] bottom-[10px] lg:right-[40px] lg:bottom-[40px] xl:right-[40px]'>
               <ContactBtn />
-            </span>
+            </span> */}
           </div>
         </ThemeContext>
       </body>
