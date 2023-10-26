@@ -11,7 +11,7 @@ import SkillLevel from './SkillLevel'
 function Stats() {
 
   return (
-    <div className='w-full h-[80%] lg:h-full flex flex-col lg:flex-row lg:gap-14 items-center md:justify-center'
+    <div className='w-full h-[80%] lg:h-full flex flex-col lg:flex-row lg:gap-14 items-center md:justify-center px-8'
     >
       <div>
         <SectionHeading 
