@@ -132,7 +132,9 @@ function page() {
       duration: '(2021-2025)',
     },
     2: {
-      content: "Shaw University President's List - GPA of 4.0 (2022-2023)"
+      content: "Shaw University President's List - GPA of 4.0",
+      duration: '(2022-2023)',
+
     }    
   }
 
