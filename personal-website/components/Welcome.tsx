@@ -25,7 +25,7 @@ function Welcome() {
 
 
   return (
-    <div className='relative w-full h-full xl:w-[90%] 2xl:w-[60%] 2xl:h-[80%] overflow-hidden'>
+    <div className='relative w-full h-full xl:w-[90%] 2xl:w-[60%] 2xl:h-[90%] overflow-hidden'>
       <div 
         className='flex flex-col md:flex-row h-full w-full px-4 items-center justify-center gap-14
         relative z-10 backdrop-blur-2xl
@@ -144,7 +144,7 @@ function Welcome() {
         transition={{
           duration: 2,
         }}
-        className={`clipped bg-gradient-to-br from-indigo-500 to-emerald-500 top-0 right-0 absolute w-[50rem] h-[50rem] 2xl:right-40 2xl:w-[60rem] 2xl:h-[60rem]`}>
+        className={`clipped bg-gradient-to-br dark:from-indigo-500 dark:to-emerald-500 from-sky-600/60 to-indigo-500 top-0 right-0 absolute w-[50rem] h-[50rem] 2xl:right-40 2xl:w-[60rem] 2xl:h-[60rem]`}>
       </motion.div>
     </div>
   )
