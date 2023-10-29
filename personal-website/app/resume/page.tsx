@@ -9,7 +9,7 @@ import Relx from '@/public/resumeImages/relx.png'
 import LexisNexis from '@/public/resumeImages/lexisnexis.png'
 import Link from 'next/link'
 import ItemsList from '@/components/ItemsList'
-import { ArrowDownCircleIcon } from '@heroicons/react/20/solid'
+import { ArrowDownCircleIcon, ArrowUpRightIcon } from '@heroicons/react/20/solid'
 
 
 function page() {
@@ -167,10 +167,10 @@ function page() {
       </SectionHeading>
       <Link 
         className='mt-4 p-2 px-4 bg-red-500 text-white rounded-full flex items-center justify-center gap-1'
-        href={'/Matthew Carby Resume.pdf'}
+        href={'https://drive.google.com/file/d/1sxuBS5bsS3VsZ97mTDMkyyT60Ze4gAuq/view?usp=drive_link'}
         target='_blank'>
           R&eacute;sum&eacute;
-          <ArrowDownCircleIcon className='w-6' />
+          <ArrowUpRightIcon className='w-6' />
       </Link>
       {/* resume */}
       <div className='flex flex-col w-[80%] md:w-[75%] xl:w-full 2xl:w-[70%] mt-12 gap-4'>

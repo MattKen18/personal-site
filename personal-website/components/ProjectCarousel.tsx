@@ -84,6 +84,7 @@ const ProjectCarousel = ({ count, images, projectDetails } : props) => {
                   className={`snap-center ${projectDetails.name + '-image-'+i}`}
                   unoptimized 
                   priority
+                  placeholder='blur'
                 />
               ))
             }
