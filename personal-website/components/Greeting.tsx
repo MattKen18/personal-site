@@ -18,7 +18,6 @@ function Greeting() {
       <SectionHeading gradientValue='heading2'>
         <span>Hey there! I&apos;m Matthew</span>
       </SectionHeading>
-      {/* <div className='rounded-md px-2 py-1 bg-slate-400/20 dark:bg-slate-100 dark:text-dark-text w-fit mt-1 opacity-70'> */}
       <div> 
         <TypeAnimation
           sequence={[ 

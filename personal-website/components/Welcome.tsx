@@ -44,7 +44,7 @@ function Welcome() {
             duration: 0.3
           }}
           
-          className='bg-indigo-500 w-[16rem] h-[16rem] 2xl:w-[20rem] 2xl:h-[20rem] rounded-full overflow-hidden'>
+          className='dark:bg-sky-400 bg-rose-400 w-[16rem] h-[16rem] 2xl:w-[20rem] 2xl:h-[20rem] rounded-full shadow-lg overflow-hidden'>
             <Image
               src={Profile}
               alt='profile image'
@@ -75,9 +75,9 @@ function Welcome() {
               className={`h-fit min-h-18 text-4xl md:text-6xl 2xl:text-7xl 2xl:h-20 font-bold `}
             />
           </SectionHeading>
-          <p className='font-bold mt-2 text-gray-500 dark:text-gray-400'>Software Engineer &bull; Web Developer 👨🏽‍💻</p>
+          <p className='font-bold mt-2 text-gray-500 dark:text-gray-400'>Software Engineer &bull; Security Analyst 👨🏽‍💻</p>
           <p className='my-4 md:w-[30rem] text-slate-900 font-bold opacity-70 text-xl md:text-2xl dark:text-white'>
-            I am a Junior Computer Science major with a passion for web development and Cybersecurity.
+            I am a Senior Cyber Operations major with a passion for Cybersecurity and Web development.
           </p>
           <div className='mt-4 flex gap-4 items-center'>
           <p className='font-bold text-slate-500 dark:text-light-text'>Let&apos;s Connect!</p>

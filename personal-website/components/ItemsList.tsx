@@ -17,7 +17,7 @@ function ItemsList({ items, columns, listStyle } : props) {
     <ul className={`columns-1 ${columns??''} rounded-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-4 lg:hover:scale-105 duration-200`}>
       {
         Object.keys(items).map((itemNum, i) => (
-          <li key={i} className={`my-2 font-light ${listStyle ? listStyle + ' before:pr-2' : ''}}`}>
+          <li key={i} className={`my-2 font-light ${listStyle ? (listStyle + ' before:pr-2') : ''}}`}>
             <span>
               {items[itemNum].content}&nbsp; 
             </span>
