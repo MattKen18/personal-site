@@ -220,7 +220,7 @@ function page() {
                 inc={true}
                 image1={Google}
                 image2={Cloud}
-                position="Software Enginerring Intern"
+                position="Software Engineering Intern"
                 location="Kitchener-Waterloo, CA"
                 duration="May 13 - Aug 12 2024"
                 lines={experiences[0]}
